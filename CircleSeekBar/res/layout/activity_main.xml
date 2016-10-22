@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:DutyView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.circleseekbar.MainActivity" >
+
+    <com.example.circleseekbar.DutyView 
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/dutyView"
+        android:layout_centerInParent="true"
+        DutyView:textSize="32sp"
+        DutyView:initDuty="33"
+        DutyView:arcWidth="6dp"
+        DutyView:progressBgColor="@android:color/darker_gray"
+        >
+        <com.example.circleseekbar.DutyViewThumb 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+        
+    </com.example.circleseekbar.DutyView>
+    
+
+</RelativeLayout>
